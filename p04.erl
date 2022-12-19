@@ -2,5 +2,5 @@
 -export([len/1]).
 
 len(List) -> len(List, 0).
-len([H | T], Num) -> len(T, Num+1);
-len([],Num) -> Num.
+len([H | T], N) -> len(T, N + 1);
+len([], N) -> N.
