@@ -1,6 +1,5 @@
 -module(p02).
 -export([but_last/1]).
 
-but_last(List) -> but_last(List, [], []).
-but_last([], A, B) -> [A, B];
-but_last([H | T], _A, B) -> but_last(T, B, H).
+but_last([_, _] = X) -> X;
+but_last([_ | T]) -> but_last(T).
