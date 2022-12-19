@@ -3,4 +3,4 @@
 
 element_at([], _) -> undefined;
 element_at([H | _T], 1) -> H;
-element_at([_H | T], Num) -> element_at(T, Num - 1).
+element_at([_H | T], N) -> element_at(T, N - 1).
